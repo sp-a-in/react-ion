@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 let hTag = React.createElement("h1", {
     id: "somecss"
 }, "CHALO BHAI");
