@@ -2,6 +2,58 @@
     color: red;
 }
 
+.header {
+    height: 10vh;
+}
+
 .myClass {
     color: blue;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.itemList {
+    display: flex;
+    gap: 5px;
+}
+
+.itemList li {
+    list-style: none;
+    padding: 5px;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.body {
+    background-color: orange;
+    height: 80vh;
+}
+
+.searchIcon {
+    height: 20px;
+    width: 20px;
+    padding-left: 10px;
+}
+
+.restaurantCard {
+    width: 273px;
+    height: 300px;
+    background: antiquewhite;   
+    margin: 20px;
+}
+
+.restaurants {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    height: 10vh;
 }
