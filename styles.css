@@ -47,11 +47,24 @@
     height: 300px;
     background: antiquewhite;   
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+h3, h4 {
+    margin: 0px;
 }
 
 .restaurants {
     display: flex;
     flex-wrap: wrap;
+}
+
+.restaurantImage {
+    height: 100px;
+    width: 100px;
 }
 
 .footer {
