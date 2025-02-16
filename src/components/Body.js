@@ -1,5 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
 // import resData from "../utils/dummyData";
+import { useState } from "react";
 
 
 let Body = () => {
@@ -28,61 +29,7 @@ let Body = () => {
                     "lastMileTravelString": "3.0 km",
                     "iconType": "ICON_TYPE_EMPTY"
                 },
-                "availability": {
-                    "nextCloseTime": "2025-01-26 23:00:00",
-                    "opened": true
-                },
-                "badges": {},
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {},
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "₹200 OFF",
-                    "subHeader": "ABOVE ₹999",
-                    "discountTag": "FLAT DEAL"
-                },
-                "orderabilityCommunication": {
-                    "title": {},
-                    "subTitle": {},
-                    "message": {},
-                    "customIcon": {}
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "4.1",
-                        "ratingCount": "1.8K+"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
             },
-            "analytics": {
-                "context": "seo-data-59f1a36c-3f95-48f1-a837-9e2aeef5f127"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/bangalore/pizza-hut-richmond-town-central-bangalore-rest10575",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
         },
         {
             "info": {
@@ -110,76 +57,7 @@ let Body = () => {
                     "lastMileTravelString": "5.5 km",
                     "iconType": "ICON_TYPE_EMPTY"
                 },
-                "availability": {
-                    "nextCloseTime": "2025-01-26 22:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Noodles.png",
-                            "description": "Delivery!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "Delivery!",
-                                        "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Noodles.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "ITEMS",
-                    "subHeader": "AT ₹149"
-                },
-                "orderabilityCommunication": {
-                    "title": {},
-                    "subTitle": {},
-                    "message": {},
-                    "customIcon": {}
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "3.4",
-                        "ratingCount": "58"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
             },
-            "analytics": {
-                "context": "seo-data-59f1a36c-3f95-48f1-a837-9e2aeef5f127"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/bangalore/chinese-wok-malleshwaram-rest405798",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
         },
         {
             "info": {
@@ -205,73 +83,7 @@ let Body = () => {
                     "lastMileTravelString": "3.0 km",
                     "iconType": "ICON_TYPE_EMPTY"
                 },
-                "availability": {
-                    "nextCloseTime": "2025-01-27 03:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "Rxawards/_CATEGORY-Burger.png",
-                            "description": "Delivery!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "Delivery!",
-                                        "imageId": "Rxawards/_CATEGORY-Burger.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "60% OFF",
-                    "subHeader": "UPTO ₹120"
-                },
-                "orderabilityCommunication": {
-                    "title": {},
-                    "subTitle": {},
-                    "message": {},
-                    "customIcon": {}
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
             },
-            "analytics": {
-                "context": "seo-data-59f1a36c-3f95-48f1-a837-9e2aeef5f127"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/bangalore/burger-king-tasker-town-shivaji-nagar-rest5938",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
         },
         {
             "info": {
@@ -305,76 +117,7 @@ let Body = () => {
                     "lastMileTravelString": "2.1 km",
                     "iconType": "ICON_TYPE_EMPTY"
                 },
-                "availability": {
-                    "nextCloseTime": "2025-01-26 23:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png",
-                            "description": "Delivery!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "Delivery!",
-                                        "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "ITEMS",
-                    "subHeader": "AT ₹47"
-                },
-                "orderabilityCommunication": {
-                    "title": {},
-                    "subTitle": {},
-                    "message": {},
-                    "customIcon": {}
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "4.1",
-                        "ratingCount": "1.5K+"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
             },
-            "analytics": {
-                "context": "seo-data-59f1a36c-3f95-48f1-a837-9e2aeef5f127"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/bangalore/chai-point-ashok-nagar-rest69274",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
         },
         {
             "info": {
@@ -404,58 +147,8 @@ let Body = () => {
                     "slaString": "25-30 mins",
                     "lastMileTravelString": "2.7 km",
                     "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-01-26 23:59:00",
-                    "opened": true
-                },
-                "badges": {},
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {},
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "ITEMS",
-                    "subHeader": "AT ₹49"
-                },
-                "orderabilityCommunication": {
-                    "title": {},
-                    "subTitle": {},
-                    "message": {},
-                    "customIcon": {}
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-59f1a36c-3f95-48f1-a837-9e2aeef5f127"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/bangalore/the-biryani-life-residency-road-central-bangalore-rest396750",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+                }
+            }
         },
         {
             "info": {
@@ -577,87 +270,8 @@ let Body = () => {
                     "slaString": "15-20 mins",
                     "lastMileTravelString": "1.3 km",
                     "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-01-27 00:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/Bolt%20Listing%20badge@3x.png",
-                            "description": "bolt!"
-                        },
-                        {
-                            "imageId": "Rxawards/_CATEGORY-Ice-creams.png",
-                            "description": "Delivery!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/Bolt%20Listing%20badge@3x.png"
-                                    }
-                                },
-                                {
-                                    "attributes": {
-                                        "description": "Delivery!",
-                                        "imageId": "Rxawards/_CATEGORY-Ice-creams.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "20% OFF",
-                    "subHeader": "UPTO ₹50"
-                },
-                "orderabilityCommunication": {
-                    "title": {},
-                    "subTitle": {},
-                    "message": {},
-                    "customIcon": {}
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "4.4",
-                        "ratingCount": "1.1K+"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                }
             },
-            "analytics": {
-                "context": "seo-data-59f1a36c-3f95-48f1-a837-9e2aeef5f127"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/bangalore/natural-ice-cream-st-marks-road-central-bangalore-rest29673",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
         },
         {
             "info": {
@@ -685,85 +299,12 @@ let Body = () => {
                     "slaString": "35-40 mins",
                     "lastMileTravelString": "2.7 km",
                     "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-01-26 23:59:00",
-                    "opened": true
-                },
-                "badges": {
-                    "textExtendedBadges": [
-                        {
-                            "iconId": "guiltfree/GF_Logo_android_3x",
-                            "shortDescription": "options available",
-                            "fontColor": "#7E808C"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {},
-                        "textBased": {},
-                        "textExtendedBadges": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "",
-                                        "fontColor": "#7E808C",
-                                        "iconId": "guiltfree/GF_Logo_android_3x",
-                                        "shortDescription": "options available"
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "ITEMS",
-                    "subHeader": "AT ₹23",
-                    "discountCalloutInfo": {
-                        "message": "Free Delivery",
-                        "logoCtx": {
-                            "logo": "v1655895371/free_delivery_logo_hqipbo.png"
-                        }
-                    }
-                },
-                "orderabilityCommunication": {
-                    "title": {},
-                    "subTitle": {},
-                    "message": {},
-                    "customIcon": {}
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                }
             },
-            "analytics": {
-                "context": "seo-data-59f1a36c-3f95-48f1-a837-9e2aeef5f127"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/bangalore/faasos-signature-wraps-and-rolls-residency-road-central-bangalore-rest566497",
-                "text": "RESTAURANT_MENU",
-                "type": "WEBLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
         }
     ];
+
+    let [resData2, setResData] =  useState(resData);
 
     return (
         <div className="body">
@@ -773,11 +314,11 @@ let Body = () => {
             </div>
             <div className="filterButton">
                 <button onClick={()=> {
-                    resData = resData.filter((restaurant)=> {
+                    resData2 = resData2.filter((restaurant)=> {
                         console.log(restaurant.info.avgRating);
                         return restaurant.info.avgRating > 4.3;
                     })
-                    console.log(resData);   
+                    setResData(resData2)  
                 }}>
                     Top Rated Restaurant
                 </button>
@@ -786,7 +327,7 @@ let Body = () => {
                 {/* <RestaurantCard resData={resData[0]}/>
                 <RestaurantCard resData={resData[1]}/> */}
                 {
-                    resData.map((restaurant) => (
+                    resData2.map((restaurant) => (
                         <RestaurantCard 
                         resData={restaurant}
                         key={restaurant.info.id}   
