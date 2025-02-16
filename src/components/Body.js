@@ -8,20 +8,15 @@ let Body = () => {
 
     let fetchData = async () => {
         let data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.97530&lng=77.59100")
-        console.log('data: ', data);
         const data2 = await data.json();
-        console.log('data2: ', data2?.data.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         let extractedData = data2?.data.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-        console.log('extractedData: ', extractedData);
         setResData(extractedData)
     }
 
     useEffect(()=> {
-        console.log("UseEffect ke andar");
         fetchData();
     }, [])
 
-    console.log("Body ke andar");
     if(!resData2.length) {
         return (
             <div>Loading.........</div>
