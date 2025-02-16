@@ -315,7 +315,6 @@ let Body = () => {
             <div className="filterButton">
                 <button onClick={()=> {
                     resData2 = resData2.filter((restaurant)=> {
-                        console.log(restaurant.info.avgRating);
                         return restaurant.info.avgRating > 4.3;
                     })
                     setResData(resData2)  
