@@ -5,12 +5,15 @@ import { useState, useEffect } from "react";
 let Body = () => {
 
     let [resData2, setResData] =  useState([]);
+    let [searchText, setSearchText] =  useState([]);
+    let [filteredData, setFilteredData] =  useState([]);
 
     let fetchData = async () => {
         let data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.97530&lng=77.59100")
         const data2 = await data.json();
         let extractedData = data2?.data.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         setResData(extractedData)
+        setFilteredData(extractedData)
     }
 
     useEffect(()=> {
@@ -24,23 +27,34 @@ let Body = () => {
     }
     return (
         <div className="body">
+        <div className="bodyButtons">
             <div className="searchBar">
-                <span>Search</span>
-                <img src="https://img.icons8.com/?size=100&id=132&format=png&color=000000" className="searchIcon" />
+                <input className="searchInput" value={searchText} onChange={(e)=> {
+                    setSearchText(e.target.value)
+                }} />
+                <button onClick={()=> {
+                    console.log(searchText);
+                    let someData = filteredData.filter((res)=> {
+                        return res.info.name.toLowerCase().includes(searchText);
+                    })
+                    setFilteredData(someData)
+                }}>Search</button>
+                {/* <img src="https://img.icons8.com/?size=100&id=132&format=png&color=000000" className="searchIcon" onClick={console.log("yes")} /> */}
             </div>
             <div className="filterButton">
                 <button onClick={()=> {
-                    resData2 = resData2.filter((restaurant)=> {
+                    resData2 = filteredData.filter((restaurant)=> {
                         return restaurant.info.avgRating > 4.3;
                     })
-                    setResData(resData2)  
+                    setFilteredData(resData2)  
                 }}>
                     Top Rated Restaurant
                 </button>
             </div>
+        </div>
             <div className="restaurants">
                 {
-                    resData2.map((restaurant) => (
+                    filteredData.map((restaurant) => (
                         <RestaurantCard 
                         resData={restaurant}
                         key={restaurant.info.id}   
