@@ -3,6 +3,12 @@ import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
+import About from "./components/About";
+
 
 // Links
 // https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
@@ -60,7 +66,18 @@ let App = () => {
 
 // Component Two is an example of Compoenent Composition 
 
+ let router = createBrowserRouter([
+    {
+        path: "/",
+        element: <App />
+    },
+    {
+        path: "/about",
+        element: <About />
+    }
+])
+
 let reactDom = ReactDOM.createRoot(document.getElementById("root"));
 // reactDom.render(jsxHeading)
 
-reactDom.render(<App />);
+reactDom.render(<RouterProvider router={router} />);
