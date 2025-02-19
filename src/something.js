@@ -5,9 +5,11 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Error from "./components/Error";
+import Contact from "./components/Contact";
 import {
     createBrowserRouter,
     RouterProvider,
+    Outlet
 } from "react-router-dom";
 
 
@@ -59,7 +61,7 @@ let App = () => {
             Footer */}
 
             <Header />
-            <Body />
+            <Outlet />
             <Footer />
         </div>
     )
@@ -71,12 +73,22 @@ let App = () => {
     {
         path: "/",
         element: <App />,
+        children: [
+            {
+                path: "/",
+                element: <Body />
+            },            
+            {
+                path: "/about",
+                element: <About />
+            },
+            {
+                path: "/contact",
+                element: <Contact />
+            }
+        ],
         errorElement: <Error />
     },
-    {
-        path: "/about",
-        element: <About />
-    }
 ])
 
 let reactDom = ReactDOM.createRoot(document.getElementById("root"));
