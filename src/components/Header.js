@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 let Header = () => {
     return (
         <div className="header">
@@ -7,10 +9,13 @@ let Header = () => {
             <div className="navItems">
                 <ul className="itemList">
                     <li>
-                        Home
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        About Us
+                        <Link to="/about">About Us</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact">Contact Us</Link>
                     </li>
                     <li>
                         Cart

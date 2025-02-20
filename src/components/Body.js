@@ -33,7 +33,6 @@ let Body = () => {
                     setSearchText(e.target.value)
                 }} />
                 <button onClick={()=> {
-                    console.log(searchText);
                     let someData = filteredData.filter((res)=> {
                         return res.info.name.toLowerCase().includes(searchText);
                     })
