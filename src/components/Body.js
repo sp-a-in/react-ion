@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
-
 
 let Body = () => {
 
@@ -54,10 +54,9 @@ let Body = () => {
             <div className="restaurants">
                 {
                     filteredData.map((restaurant) => (
-                        <RestaurantCard 
+                        <Link to={"/restaurant/" + restaurant.info.id }  key={restaurant.info.id}><RestaurantCard 
                         resData={restaurant}
-                        key={restaurant.info.id}   
-                    />
+                    /></Link>
                     )) 
                 }
                 {/* <RestaurantCard />

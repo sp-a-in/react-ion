@@ -73,6 +73,11 @@ h3, h4 {
     gap: 16px;
 }
 
+.restaurantInfo {
+    margin: 20px;
+    background-color: aquamarine;
+}
+
 .footer {
     height: 10vh;
 }
