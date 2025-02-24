@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
+import RestaurantDetail from "./components/RestaurantDetail";
 import {
     createBrowserRouter,
     RouterProvider,
@@ -85,7 +86,11 @@ let App = () => {
             {
                 path: "/contact",
                 element: <Contact />
-            }
+            },
+            {
+                path: "/restaurant/:id",
+                element: <RestaurantDetail />
+            },
         ],
         errorElement: <Error />
     },
