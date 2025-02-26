@@ -6,18 +6,20 @@ const About = () => {
         <div className="aboutUs">
             <h1>About Us</h1>
             <div className="members">
+            
                 <UserClass userData={
                     {
                         name: "Sparsh",
                         location: "MP"
                     }
                 } />
-                <User userData={
+
+                {/* <User userData={
                     {
                         name: "Samyak",
                         location: "Kashmir"
                     }
-                } />
+                } /> */}
             </div>
         </div>
 
