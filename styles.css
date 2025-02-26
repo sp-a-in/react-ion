@@ -80,6 +80,21 @@ h3, h4 {
     background-color: aquamarine;
 }
 
+.members {
+    display: flex;
+    gap: 20px;
+}
+
+.userFuncCard, .userClassCard {
+    padding: 20px;
+    border: 1px solid blue;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
 .footer {
     height: 10vh;
 }

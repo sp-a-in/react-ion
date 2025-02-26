@@ -5,8 +5,20 @@ const About = () => {
     return (
         <div className="aboutUs">
             <h1>About Us</h1>
-            <UserClass name={"This is User Class"} />
-            <User name={"This is User Function"} />
+            <div className="members">
+                <UserClass userData={
+                    {
+                        name: "Sparsh",
+                        location: "MP"
+                    }
+                } />
+                <User userData={
+                    {
+                        name: "Samyak",
+                        location: "Kashmir"
+                    }
+                } />
+            </div>
         </div>
 
     )
