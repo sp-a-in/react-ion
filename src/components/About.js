@@ -1,6 +1,14 @@
+import User from "./User";
+import UserClass from "./UserClass";
+
 const About = () => {
     return (
-        <h1>About Me</h1>
+        <div className="aboutUs">
+            <h1>About Us</h1>
+            <UserClass name={"This is User Class"} />
+            <User name={"This is User Function"} />
+        </div>
+
     )
 }
 

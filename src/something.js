@@ -6,13 +6,13 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
+// import AboutClass from "./components/AboutClass";
 import RestaurantDetail from "./components/RestaurantDetail";
 import {
     createBrowserRouter,
     RouterProvider,
     Outlet
 } from "react-router-dom";
-import AboutClass from "./components/AboutClass";
 
 
 // Links
@@ -82,7 +82,7 @@ let App = () => {
             },            
             {
                 path: "/about",
-                element: <AboutClass aboutData={"This is data"} />
+                element: <About />
             },
             {
                 path: "/contact",
