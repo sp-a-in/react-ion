@@ -61,6 +61,8 @@ h3, h4 {
 .restaurants {
     display: flex;
     flex-wrap: wrap;
+    height: 78vh;
+    overflow-y: scroll;
 }
 
 .restaurantImage {

@@ -12,6 +12,7 @@ import {
     RouterProvider,
     Outlet
 } from "react-router-dom";
+import AboutClass from "./components/AboutClass";
 
 
 // Links
@@ -81,7 +82,7 @@ let App = () => {
             },            
             {
                 path: "/about",
-                element: <About />
+                element: <AboutClass aboutData={"This is data"} />
             },
             {
                 path: "/contact",
