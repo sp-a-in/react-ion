@@ -7,9 +7,15 @@ class UserClass extends React.Component {
             count: 2, 
             count2: 11
         }
+        console.log("Parent constructor");
+    }
+
+    componentDidMount() {
+        console.log("Parent Component did mount");
     }
 
     render() {
+        console.log("Parent render");
         return (
             <div className="userClassCard">
                 <button onClick={()=> {

@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
-// import AboutClass from "./components/AboutClass";
+import AboutClass from "./components/AboutClass";
 import RestaurantDetail from "./components/RestaurantDetail";
 import {
     createBrowserRouter,
@@ -82,7 +82,7 @@ let App = () => {
             },            
             {
                 path: "/about",
-                element: <About />
+                element: <AboutClass name={"this is class component"} />
             },
             {
                 path: "/contact",
