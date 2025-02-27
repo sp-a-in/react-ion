@@ -9,9 +9,12 @@ let Body = () => {
     let [filteredData, setFilteredData] =  useState([]);
 
     let fetchData = async () => {
-        let data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.97530&lng=77.59100")
+        let data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.97530&lng=77.59100&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+        console.log('data: ', data);
         const data2 = await data.json();
+        console.log('data2: ', data2);
         let extractedData = data2?.data.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+        console.log('extractedData: ', extractedData);
         setResData(extractedData)
         setFilteredData(extractedData)
     }
@@ -20,7 +23,7 @@ let Body = () => {
         fetchData();
     }, [])
 
-    if(!resData2.length) {
+    if(0) {
         return (
             <div>Loading.........</div>
         )
