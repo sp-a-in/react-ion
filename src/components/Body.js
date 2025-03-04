@@ -23,7 +23,7 @@ let Body = () => {
         fetchData();
     }, [])
 
-    if(0) {
+    if(!resData2.length) {
         return (
             <div>Loading.........</div>
         )
