@@ -14,7 +14,7 @@ let Header = () => {
             <div className="navItems">
                 <ul className="itemList">
                     <li>
-                        <h2>Online Status</h2> {onlineStatus ? "yes": "no"}
+                        Online Status: {onlineStatus ? "online": "offline"}
                     </li>
                     <li>
                         <Link to="/">Home</Link>

@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
+import useOnlineStatus from "../utils/useOnlineSatus";
 
 let Body = () => {
 
     let [resData2, setResData] =  useState([]);
     let [searchText, setSearchText] =  useState([]);
     let [filteredData, setFilteredData] =  useState([]);
+    let isOnline = useOnlineStatus()
 
     let fetchData = async () => {
         let data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.97530&lng=77.59100&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
@@ -22,6 +24,12 @@ let Body = () => {
     useEffect(()=> {
         fetchData();
     }, [])
+
+    if(!isOnline) {
+        return (
+            <h1>You're offlline. Please check your internet connection</h1>
+        )
+    } 
 
     if(!resData2.length) {
         return (
