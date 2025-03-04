@@ -1,9 +1,10 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
 import About from "./components/About";
+// import Grocery from "./components/Grocery";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
 import AboutClass from "./components/AboutClass";
@@ -14,6 +15,8 @@ import {
     Outlet
 } from "react-router-dom";
 
+
+const Grocery = lazy(()=> import("./components/Grocery"));
 
 // Links
 // https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
@@ -91,6 +94,10 @@ let App = () => {
             {
                 path: "/restaurant/:id",
                 element: <RestaurantDetail />
+            },
+            {
+                path: "/grocery",
+                element: <Suspense fallback={<h1>Loading....................</h1>} ><Grocery /></Suspense>
             },
         ],
         errorElement: <Error />

@@ -28,6 +28,9 @@ let Header = () => {
                     <li>
                         Cart
                     </li>
+                    <li>
+                        <Link to="/grocery"> Grocery </Link>
+                    </li>
                 </ul>
             </div>
         </div>
