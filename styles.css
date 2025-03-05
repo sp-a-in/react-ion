@@ -1,4 +1,5 @@
-#somecss {
+@import "tailwindcss";
+/* #somecss {
     color: red;
 }
 
@@ -97,4 +98,4 @@ h3, h4 {
 
 .footer {
     height: 10vh;
-}
+} */

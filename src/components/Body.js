@@ -38,12 +38,12 @@ let Body = () => {
     }
     return (
         <div className="body">
-        <div className="bodyButtons">
-            <div className="searchBar">
-                <input className="searchInput" value={searchText} onChange={(e)=> {
+        <div className="flex p-3 gap-4 items-center">
+            <div className="flex gap-2">
+                <input className="border-2 border-amber-950 rounded-md" value={searchText} onChange={(e)=> {
                     setSearchText(e.target.value)
                 }} />
-                <button onClick={()=> {
+                <button className="bg-emerald-400 p-2 rounded-2xl hover:bg-amber-300 cursor-pointer" onClick={()=> {
                     let someData = filteredData.filter((res)=> {
                         return res.info.name.toLowerCase().includes(searchText);
                     })
@@ -51,8 +51,8 @@ let Body = () => {
                 }}>Search</button>
                 {/* <img src="https://img.icons8.com/?size=100&id=132&format=png&color=000000" className="searchIcon" onClick={console.log("yes")} /> */}
             </div>
-            <div className="filterButton">
-                <button onClick={()=> {
+            <div className="bg-emerald-400 p-2 rounded-2xl hover:bg-amber-300 cursor-pointer">
+                <button className="cursor-pointer" onClick={()=> {
                     resData2 = filteredData.filter((restaurant)=> {
                         return restaurant.info.avgRating > 4.3;
                     })
@@ -62,7 +62,7 @@ let Body = () => {
                 </button>
             </div>
         </div>
-            <div className="restaurants">
+            <div className="flex flex-wrap gap-8">
                 {
                     filteredData.map((restaurant) => (
                         <Link to={"/restaurant/" + restaurant.info.id }  key={restaurant.info.id}><RestaurantCard 
