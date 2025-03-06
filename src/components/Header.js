@@ -4,7 +4,6 @@ import useOnlineStatus from "../utils/useOnlineSatus";
 let Header = () => {
 
     let onlineStatus = useOnlineStatus();
-    console.log('onlineStatus: ', onlineStatus);
 
     return (
         <div className="flex items-center justify-between bg-orange-300 shadow-xl">
