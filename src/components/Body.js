@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { RestaurantCardWithLabel } from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import useOnlineStatus from "../utils/useOnlineSatus";
 
@@ -9,6 +9,7 @@ let Body = () => {
     let [searchText, setSearchText] =  useState([]);
     let [filteredData, setFilteredData] =  useState([]);
     let isOnline = useOnlineStatus()
+    let RestaurantCardWithLabels = RestaurantCardWithLabel(RestaurantCard);
 
     let fetchData = async () => {
         let data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.97530&lng=77.59100&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
@@ -65,9 +66,13 @@ let Body = () => {
             <div className="flex flex-wrap gap-8">
                 {
                     filteredData.map((restaurant) => (
-                        <Link to={"/restaurant/" + restaurant.info.id }  key={restaurant.info.id}><RestaurantCard 
-                        resData={restaurant}
-                    /></Link>
+                        <Link to={"/restaurant/" + restaurant.info.id} key={restaurant.info.id}>
+                            { restaurant.info?.aggregatedDiscountInfoV3?.header.includes('OFF') ?
+                                < RestaurantCardWithLabels resData={restaurant} /> :  <RestaurantCard
+                                resData={restaurant}
+                            />    
+                            }
+                        </Link>
                     )) 
                 }
                 {/* <RestaurantCard />
