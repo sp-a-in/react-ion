@@ -1,11 +1,14 @@
 import { useParams } from "react-router-dom";
 import useRestaurantDetail from "../utils/useRestaurantDetail";
 import RestaurantMealCaroousel from "./RestaurantMealCarousel";
+import { useState } from "react";
 
 const RestaurantDetail = () => {
 
 
      let {id} = useParams();
+     let [showItems, setShowItems] = useState(false);
+
 
      let restaurantDetail = useRestaurantDetail(id)
 
@@ -40,7 +43,7 @@ const RestaurantDetail = () => {
 
 
             {
-                itemCategories.map((itemCategory) => <RestaurantMealCaroousel carouselData={itemCategory} />) 
+                itemCategories.map((itemCategory, index) => <RestaurantMealCaroousel key={index} carouselData={itemCategory} setShowItems={(()=> setShowItems(index))} isCarouselOpen = {index==showItems} />) 
             }   
 
 
