@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -14,9 +14,12 @@ import {
     RouterProvider,
     Outlet
 } from "react-router-dom";
+import UserContext from "./utils/UserContext";
 
 
 const Grocery = lazy(()=> import("./components/Grocery"));
+
+
 
 // Links
 // https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
@@ -59,15 +62,22 @@ const Grocery = lazy(()=> import("./components/Grocery"));
 
 
 let App = () => {
+    let [loggedInUser, setLoggedInUser] = useState()
+
+    useEffect(() => {
+        setLoggedInUser("Eren Yeager");
+    }, [])
     return (
         <div id="app">
-            {/* Header
-            Body
-            Footer */}
+            <UserContext.Provider value={{userName: loggedInUser, setLoggedInUser}} >
+                {/* Header
+                    Body
+                Footer */}
 
-            <Header />
-            <Outlet />
-            <Footer />
+                <Header />
+                <Outlet />
+                <Footer />
+            </UserContext.Provider>
         </div>
     )
 }

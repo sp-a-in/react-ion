@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import RestaurantCard, { RestaurantCardWithLabel } from "./RestaurantCard";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import useOnlineStatus from "../utils/useOnlineSatus";
+import UserContext from "../utils/UserContext";
 
 let Body = () => {
 
@@ -9,6 +10,7 @@ let Body = () => {
     let [searchText, setSearchText] =  useState([]);
     let [filteredData, setFilteredData] =  useState([]);
     let isOnline = useOnlineStatus()
+    let {userName, setLoggedInUser} = useContext(UserContext)
     let RestaurantCardWithLabels = RestaurantCardWithLabel(RestaurantCard);
 
     let fetchData = async () => {
@@ -61,6 +63,12 @@ let Body = () => {
                 }}>
                     Top Rated Restaurant
                 </button>
+            </div>
+            <div className="flex gap-2">
+                <input className="border-2 border-amber-950 rounded-md" value={userName} onChange={(e)=> {
+                    setLoggedInUser(e.target.value)
+                }} />
+                {/* <img src="https://img.icons8.com/?size=100&id=132&format=png&color=000000" className="searchIcon" onClick={console.log("yes")} /> */}
             </div>
         </div>
             <div className="flex flex-wrap gap-8">
