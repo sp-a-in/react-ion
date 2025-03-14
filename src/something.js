@@ -15,6 +15,8 @@ import {
     Outlet
 } from "react-router-dom";
 import UserContext from "./utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./stores/appStore";
 
 
 const Grocery = lazy(()=> import("./components/Grocery"));
@@ -69,15 +71,17 @@ let App = () => {
     }, [])
     return (
         <div id="app">
-            <UserContext.Provider value={{userName: loggedInUser, setLoggedInUser}} >
-                {/* Header
-                    Body
-                Footer */}
+             <Provider store={appStore}>
+                <UserContext.Provider value={{userName: loggedInUser, setLoggedInUser}} >
+                    {/* Header
+                        Body
+                    Footer */}
 
-                <Header />
-                <Outlet />
-                <Footer />
-            </UserContext.Provider>
+                    <Header />
+                    <Outlet />
+                    <Footer />
+                </UserContext.Provider>
+            </Provider>
         </div>
     )
 }
