@@ -1,5 +1,8 @@
 import React, { lazy, Suspense, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
+
+
+
 import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
@@ -9,6 +12,10 @@ import Error from "./components/Error";
 import Contact from "./components/Contact";
 import AboutClass from "./components/AboutClass";
 import RestaurantDetail from "./components/RestaurantDetail";
+import CartDetails from "./components/CartDetails";
+
+
+
 import {
     createBrowserRouter,
     RouterProvider,
@@ -112,6 +119,10 @@ let App = () => {
             {
                 path: "/grocery",
                 element: <Suspense fallback={<h1>Loading....................</h1>} ><Grocery /></Suspense>
+            },
+            {
+                path: "/cart",
+                element: <CartDetails />
             },
         ],
         errorElement: <Error />

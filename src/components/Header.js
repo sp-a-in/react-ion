@@ -9,7 +9,6 @@ let Header = () => {
     let onlineStatus = useOnlineStatus();
     let {userName} = useContext(UserContext)
     let cartItems = useSelector((state)=> state.cart.items)
-    console.log('cartItems: ', cartItems);
 
     return (
         <div className="flex items-center justify-between bg-orange-300 shadow-xl">
@@ -30,13 +29,13 @@ let Header = () => {
                     <li className="font-sans text-amber-900">
                         <Link to="/contact">Contact Us</Link>
                     </li>
-                    <li className="font-sans text-amber-900">
-                         🛒({cartItems.length})
+                    <li className="font-sans text-amber-900 cursor-pointer">
+                         <Link to="/cart">🛒({cartItems.length})</Link>
                     </li>
-                    <li className="font-sans text-amber-900">
+                    <li className="font-sans text-amber-900 cursor-pointer">
                         <Link to="/grocery"> Grocery </Link>
                     </li>
-                    <li className="font-sans text-blue-950 font-bold">
+                    <li className="font-sans text-blue-950 font-bold cursor-pointer">
                         {userName}
                     </li>
                     {/* <li className="font-sans text-blue-950 font-bold">
